@@ -1,10 +1,10 @@
 import React from 'react';
 
-class Search extends React.Component {
+class Results extends React.Component {
     constructor( props ) {
         super( props );
         this.state = {
-            searchQuery: '',
+            results: '',
         }
 
         this.handleChange = this.handleChange.bind( this );
@@ -37,4 +37,4 @@ class Search extends React.Component {
 
 }
 
-export default Search;
+export default Results;

@@ -6,11 +6,17 @@ class Content extends React.Component {
         super( props );
     }
 
+    handleSubmit(input){
+        console.log(input);
+    }
+
     render() {
         return (
-            <>
-                <Search />
-            </>
+            <div id="content">
+                <Search 
+                    submitProps={this.handleSubmit}
+                />
+            </div>
         )
     }
 
